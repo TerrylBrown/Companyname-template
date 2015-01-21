@@ -1,0 +1,47 @@
+// *****************************************
+// Buttons
+// *****************************************
+
+%button-base {
+  display: inline-block;
+  padding: rem(20px);
+  border-radius: 4px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 700;
+  transition: all .3s;
+}
+
+.btn--primary {
+  @extend %button-base;
+  background: $base-button-color;
+  color: #fff;
+  &:hover {
+    background: darken($base-accent-color, 10%);
+    color: #fff;
+  }
+}
+
+.btn--ghost {
+  @extend %button-base;
+  margin-top: rem(25px);
+  background: transparent;
+  border: 2px solid $dark-gray;
+  color: $dark-gray;
+  &:hover {
+    background: $dark-gray;
+    color: #fff;
+  }
+}
+
+.btn--ghost-light {
+  @extend %button-base;
+  margin-top: rem(25px);
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: $dark-gray;
+  }
+}

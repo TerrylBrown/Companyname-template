@@ -1,0 +1,24 @@
+// *****************************************
+// Blog
+// *****************************************
+
+// blog
+.blog {
+  @extend %panel-pad;
+  h1 {
+    @include media($medium-screen-up) {
+      text-align: center;
+    }
+  }
+}
+
+.blog__column {
+  margin-top: rem(25px);
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+  }
+}
+
+.blog-summary {
+  padding: rem(15px);
+}

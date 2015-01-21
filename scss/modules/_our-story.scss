@@ -1,0 +1,20 @@
+// *****************************************
+// Our Story
+// *****************************************
+
+.our-story {
+  @extend %panel-pad;
+  background: $light-gray;
+  @include media($medium-screen-up) {
+    background: url('../img/our-story-bg2.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.our-story__column {
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+    @include shift(6);
+  }
+}

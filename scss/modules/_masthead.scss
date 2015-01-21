@@ -1,0 +1,37 @@
+// *****************************************
+// Masthead
+// *****************************************
+
+.masthead {
+  padding: rem(60px) 0;
+  background: url('../img/masthead-bg.jpg') no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.13);
+  @include media($medium-screen-up) {
+    padding: rem(120px) 0;
+  }
+  @include media($large-screen-up) {
+    padding: em(290px) 0;
+  }
+}
+
+.masthead__header {
+  margin-bottom: rem(30px);
+  color: #fff;
+  font-size: em(40px);
+  line-height: 1;
+  @include media($medium-screen-up) {
+    font-size: em(60px);
+  }
+}
+
+.masthead__text {
+  @include media($large-screen-up) {
+    @include span-columns(8);
+  }
+}
+
+.masthead .btn--primary {
+  margin-top: rem(50px);
+}

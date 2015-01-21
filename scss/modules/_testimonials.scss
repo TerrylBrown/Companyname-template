@@ -1,0 +1,49 @@
+// *****************************************
+// Testimonials
+// *****************************************
+
+.testimonials {
+  @extend %panel-pad;
+  h1 {
+    @include media($medium-screen-up) {
+      text-align: center;
+    }
+  }
+}
+
+.testimonials__column {
+  @include media($medium-screen-up) {
+    @include span-columns(6);
+  }
+}
+
+.qoute {
+  margin-top: rem(25px);
+}
+
+.qoute__box {
+  padding: 25px;
+  border: 1px solid $light-gray;
+  p {
+    font-size: em(20px);
+    margin-bottom: 0;
+  }
+}
+
+.qoute-arrow {
+    float: right;
+    margin-right: 18px;
+    margin-top: -1px;
+  }
+
+.qoute__cite {
+  text-align: right;
+  padding: rem(25px) 0;
+  img {
+    float: right;
+    margin-left: rem(20px);
+  }
+  h3 {
+    margin-top: rem(6px);
+  }
+}

@@ -1,0 +1,27 @@
+// *****************************************
+// Banner
+// *****************************************
+
+.banner {
+  background: $base-accent-color;
+  padding: rem(60px) 0;
+}
+
+.banner__column {
+  h2, p {
+    color: #fff;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  @include media($large-screen-up) {
+    @include span-columns(4);
+    &:first-of-type {
+      @include span-columns(8);
+    }
+    .btn--ghost-light {
+      margin-top: 0;
+      float: right;
+    }
+  }
+}

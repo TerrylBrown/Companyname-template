@@ -1,0 +1,27 @@
+// *****************************************
+// Masthead Layout
+// *****************************************
+
+.masthead {
+	padding: rem(60px) 0;
+	@include media($medium-screen-up) {
+  	padding: rem(120px) 0;
+	}
+  @include media($large-screen-up) {
+    padding: em(290px) 0;
+  }
+}
+
+.masthead__header {
+  margin-bottom: rem(30px);
+}
+
+.masthead__text {
+	@include media($large-screen-up) {
+  	@include span-columns(8);
+	}
+}
+
+.masthead .btn--primary {
+  margin-top: rem(50px);
+}

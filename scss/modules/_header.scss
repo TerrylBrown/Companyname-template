@@ -1,0 +1,38 @@
+// *****************************************
+// Header
+// *****************************************
+
+.site-header {
+  background: $dark-gray;
+  width: 100%;
+  padding: rem(20px) rem(10px);
+  @include media($large-screen-up) {
+    position: absolute;
+    background: transparent;
+    padding: rem(60px) 0 rem(20px);
+  }
+}
+
+.site-logo {
+  float: left;
+}
+
+.site-nav {
+  display: none;
+  @include media($large-screen-up) {
+    float: right;
+    margin-top: rem(15px);
+    display: block !important;
+  }
+}
+
+.nav-toggle {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-top: rem(5px);
+  float: right;
+  @include media($large-screen-up) {
+    display: none;
+  }
+}

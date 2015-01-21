@@ -1,0 +1,66 @@
+// *****************************************
+// Experience
+// *****************************************
+
+.experience {
+  @extend %panel-pad;
+  background: $dark-gray;
+  color: #fff;
+  @include media($large-screen-up) {
+    background: url('../img/experience-bg.jpg') no-repeat fixed;
+    background-size: cover;
+  }
+  h1 {
+    color: #fff;
+  }
+}
+
+.experience__column {
+  @include media($large-screen-down) {
+    &:first-of-type {
+      margin-bottom: rem(50px);
+    }
+  }
+  @include media($large-screen-up) {
+    @include span-columns(6);
+  }
+}
+
+// Chart
+.skill-chart {
+  position: relative;
+}
+
+.skill-chart__item {
+  margin-bottom: rem(20px);
+}
+
+.skill-bar {
+  position:relative;
+  display: block;
+  height: 15px;
+  width: 100%;
+  margin: rem(5px) 0;
+  background: #fff;
+  &:after {
+    content: '\A';
+    position: absolute;
+    background: $base-accent-color;
+    top: 0; bottom: 0;
+    left: 0; 
+  }
+  .skill-marker {
+    position: absolute;
+    display: none;
+  }
+}
+
+#cplus:after {width: 95%;}
+
+#dotnet:after {width: 75%;}
+
+#html-five:after {width: 80%;}
+
+#jquery:after {width: 55%;}
+
+#angular:after {width: 85%;}

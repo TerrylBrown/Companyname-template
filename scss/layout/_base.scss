@@ -1,0 +1,18 @@
+// *****************************************
+// Base Layout Elements
+// *****************************************
+
+.wrapper {
+  @include outer-container;
+  padding: 0 rem(15px);
+}
+
+%panel-pad {
+	padding: rem(50px) 0;
+	@include media($medium-screen-up) {
+  	padding: rem(70px) 0 rem(100px) 0;
+	}
+	@include media($large-screen-up) {
+  	padding: rem(115px) 0 rem(145px) 0;
+	}
+}

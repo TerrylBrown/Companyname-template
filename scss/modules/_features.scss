@@ -1,0 +1,26 @@
+// *****************************************
+// Features
+// *****************************************
+
+.features {
+  @extend %panel-pad;
+  text-align: center;
+}
+
+.features__column {
+  padding: 0 rem(20px);
+  margin-top: rem(20px);
+  @include span-columns(12);
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+  }
+}
+
+.features h1 {
+  margin-bottom: rem(50px);
+}
+
+.features__column h3 {
+  text-transform: uppercase;
+  margin: rem(15px) 0;
+}

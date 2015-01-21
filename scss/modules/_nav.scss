@@ -1,0 +1,28 @@
+// *****************************************
+// Nav
+// *****************************************
+
+.site-nav {
+  clear: both;
+  @include media($large-screen-up) {
+    clear: none;
+  }
+}
+
+.nav-list {
+  @include clearfix;
+  text-align: center; 
+}
+
+.nav-list__item {
+  padding: rem(10px) 0;
+  @include media($large-screen-up) {
+    float: left;
+    margin-left: rem(30px);
+    padding: 0;
+  }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

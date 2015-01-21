@@ -1,0 +1,32 @@
+// *****************************************
+// Footer
+// *****************************************
+
+.site-footer {
+  padding: rem(25px) 0;
+  @include media($medium-screen-up) {
+    padding: rem(40px) 0 rem(50px);
+  }
+  background: darken($dark-gray, 10%);
+  color: #fff;
+  p, li {
+    font-size: em(14px);
+  }
+  h4 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: rem(10px);
+  }
+  .site-logo {
+    margin-top: rem(30px);
+  }
+}
+
+
+.site-footer__column {
+  @include span-columns(12);
+  padding: rem(15px) 0;
+  @include media($medium-screen-up) {
+    @include span-columns(3);
+  }
+}

@@ -1,0 +1,16 @@
+// *****************************************
+// Logo
+// *****************************************
+
+.site-logo {
+  font-family: $logo-font-family;
+  font-size: em(30px);
+  font-weight: 700;
+  color: #fff;
+  span {
+    font-weight: 400;
+  }
+  &:hover {
+    color: $base-accent-color;
+  }
+}
